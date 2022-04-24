@@ -8,6 +8,8 @@ BOARD_VENDOR := samsung
 
 COMMON_PATH := device/samsung/sm6150-common
 
+include device/samsung_slsi/sepolicy/sepolicy.mk
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a
@@ -105,8 +107,6 @@ PRODUCT_PUBLIC_SEPOLICY_DIRS += \
 
 PRODUCT_PRIVATE_SEPOLICY_DIRS += \
     device/qcom/sepolicy/product/private
-
-BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(COMMON_PATH)
