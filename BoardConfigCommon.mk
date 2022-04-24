@@ -8,8 +8,6 @@ BOARD_VENDOR := samsung
 
 COMMON_PATH := device/samsung/sm6150-common
 
-include device/samsung_slsi/sepolicy/sepolicy.mk
-
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a
@@ -56,7 +54,6 @@ BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144
 BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := ext4
-BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_COPY_OUT_VENDOR := vendor
 
 # Properties
