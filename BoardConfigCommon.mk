@@ -105,6 +105,8 @@ PRODUCT_PUBLIC_SEPOLICY_DIRS += \
 PRODUCT_PRIVATE_SEPOLICY_DIRS += \
     device/qcom/sepolicy/product/private
 
+BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(COMMON_PATH)
 
